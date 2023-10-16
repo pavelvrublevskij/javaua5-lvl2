@@ -15,5 +15,8 @@ public class P1GitApp {
 		byte f = 127; // from -128 to 127
 		long g = 1234567890; //from -2^63 to 2^63-1
 		short h = 32767; // from -32768 to 32767
+
+		var digit = 5; // int
+		var text = "Hello"; // String
 	}
 }
