@@ -3,6 +3,10 @@ package lt.codeacademy.lv2.git;
 public class P1GitApp {
 
 	public static void main(String[] args) {
+		primitiveDataTypes();
+	}
+
+	private static void primitiveDataTypes() {
 		int a = 5;
 		boolean b = true; // true or false
 		float c = 5.5f;
@@ -19,4 +23,5 @@ public class P1GitApp {
 		var digit = 5; // int
 		var text = "Hello"; // String
 	}
+
 }
