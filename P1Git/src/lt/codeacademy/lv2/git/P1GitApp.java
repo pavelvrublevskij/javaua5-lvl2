@@ -11,10 +11,6 @@ public class P1GitApp {
 		// ternary operators -   ?:
 		int result = (5 > 3)? 5 : 3;
 		// example with methods
-		/*List<Object> result =
-				(param1 > param2) && (i < j)
-						? callMethod1(param1)
-						: getListOf(param2);*/
 
 		int param1 = 1;
 		int param2 = 2;
