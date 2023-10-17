@@ -15,6 +15,18 @@ public class P1GitApp {
 				(param1 > param2) && (i < j)
 						? callMethod1(param1)
 						: getListOf(param2);*/
+
+		int param1 = 1;
+		int param2 = 2;
+		if ((param1 > param2) && (param1 < param2)){
+			//
+		} else if (param1 - 1 >=  param2) {
+			//
+		} else if (param2 == 0) {
+			//
+		} else {
+			///
+		}
 	}
 
 	private static void primitiveDataTypes() {
