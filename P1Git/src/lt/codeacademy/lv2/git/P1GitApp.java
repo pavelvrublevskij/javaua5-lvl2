@@ -8,13 +8,13 @@ public class P1GitApp {
 	}
 
 	private static void ifExample() {
-		int result = 0;
-
-		if (5 > 3) {
-			result = 5;
-		} else {
-			result = 3;
-		}
+		// ternary operators -   ?:
+		int result = (5 > 3)? 5 : 3;
+		// example with methods
+		/*List<Object> result =
+				(param1 > param2) && (i < j)
+						? callMethod1(param1)
+						: getListOf(param2);*/
 	}
 
 	private static void primitiveDataTypes() {
