@@ -11,20 +11,20 @@ public class P1GitApp {
 		int dayValue = 6;
 
 		if (dayValue >= 1 && dayValue <= 5) {
-			working();
+			doWork();
 		} else if (dayValue >= 6 && dayValue <= 7) {
-			resting();
+			doToRest();
 		} else {
 			System.err.println("day value is wrong!");
 		}
 	}
 
-	private static void resting() {
-		System.out.println("do some rest!");
+	private static void doToRest() {
+		System.out.println("I am resting!");
 	}
 
-	private static void working() {
-		System.out.println("I am working");
+	private static void doWork() {
+		System.out.println("I am working!");
 	}
 
 	private static void primitiveDataTypes() {
