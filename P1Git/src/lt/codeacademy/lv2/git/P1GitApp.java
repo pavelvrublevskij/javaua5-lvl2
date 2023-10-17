@@ -8,12 +8,12 @@ public class P1GitApp {
 	}
 
 	private static void ifExample() {
-		boolean tiesa = (5 > 3);
+		int result = 0;
 
 		if (5 > 3) {
-			tiesa = true;
+			result = 5;
 		} else {
-			tiesa = false;
+			result = 3;
 		}
 	}
 
