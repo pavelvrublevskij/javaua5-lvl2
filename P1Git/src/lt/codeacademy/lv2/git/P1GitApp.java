@@ -8,21 +8,23 @@ public class P1GitApp {
 	}
 
 	private static void ifExample() {
-		// ternary operators -   ?:
-		int result = (5 > 3)? 5 : 3;
-		// example with methods
+		int dayValue = 6;
 
-		int param1 = 1;
-		int param2 = 2;
-		if ((param1 > param2) && (param1 < param2)){
-			//
-		} else if (param1 - 1 >=  param2) {
-			//
-		} else if (param2 == 0) {
-			//
+		if (dayValue >= 1 && dayValue <= 5) {
+			working();
+		} else if (dayValue >= 6 && dayValue <= 7) {
+			resting();
 		} else {
-			///
+			System.err.println("day value is wrong!");
 		}
+	}
+
+	private static void resting() {
+		System.out.println("do some rest!");
+	}
+
+	private static void working() {
+		System.out.println("I am working");
 	}
 
 	private static void primitiveDataTypes() {
