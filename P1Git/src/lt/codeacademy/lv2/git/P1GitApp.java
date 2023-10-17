@@ -8,12 +8,14 @@ public class P1GitApp {
 	}
 
 	private static void ifExample() {
-		//jei darbo diena - dirbame, jei savaitgalis - ilsemes
-		final int dayAsValue = 2;
-		if (dayAsValue >= 1 && dayAsValue <= 5) {
+		int dayValue = 6;
+
+		if (dayValue >= 1 && dayValue <= 5) {
 			doWork();
-		} else {
+		} else if (dayValue >= 6 && dayValue <= 7) {
 			doToRest();
+		} else {
+			System.err.println("day value is wrong!");
 		}
 	}
 
