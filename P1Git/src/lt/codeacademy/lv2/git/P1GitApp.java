@@ -4,6 +4,17 @@ public class P1GitApp {
 
 	public static void main(String[] args) {
 		primitiveDataTypes();
+		ifExample();
+	}
+
+	private static void ifExample() {
+		boolean tiesa = (5 > 3);
+
+		if (5 > 3) {
+			tiesa = true;
+		} else {
+			tiesa = false;
+		}
 	}
 
 	private static void primitiveDataTypes() {
