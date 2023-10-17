@@ -4,6 +4,25 @@ public class P1GitApp {
 
 	public static void main(String[] args) {
 		primitiveDataTypes();
+		ifExample();
+	}
+
+	private static void ifExample() {
+		// ternary operators -   ?:
+		int result = (5 > 3)? 5 : 3;
+		// example with methods
+
+		int param1 = 1;
+		int param2 = 2;
+		if ((param1 > param2) && (param1 < param2)){
+			//
+		} else if (param1 - 1 >=  param2) {
+			//
+		} else if (param2 == 0) {
+			//
+		} else {
+			///
+		}
 	}
 
 	private static void primitiveDataTypes() {
