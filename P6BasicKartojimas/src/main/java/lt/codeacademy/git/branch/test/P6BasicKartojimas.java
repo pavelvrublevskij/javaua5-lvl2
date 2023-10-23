@@ -27,7 +27,7 @@ public class P6BasicKartojimas {
 			}
 		}*/
 
-		Arrays.asList(manager.getPersons())
+		manager.getPersons()
 				.forEach(p -> {  // lambda expression
 					if (p != null) {
 						myPrintfln("Person (id, name): %d, %s", p.getId(), p.getName());

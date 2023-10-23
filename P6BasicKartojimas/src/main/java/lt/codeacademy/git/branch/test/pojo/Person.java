@@ -3,8 +3,8 @@ package lt.codeacademy.git.branch.test.pojo;
 public class Person {
 
 	private final int id;
-	private final String name;
-	private final String surname;
+	private String name;
+	private String surname;
 
 	public Person(int id, String name, String surname) {
 		this.id = id;
@@ -20,7 +20,15 @@ public class Person {
 		return name;
 	}
 
+	public void setName(String name) {
+		this.name = name;
+	}
+
 	public String getSurname() {
 		return surname;
+	}
+
+	public void setSurname(String surname) {
+		this.surname = surname;
 	}
 }
