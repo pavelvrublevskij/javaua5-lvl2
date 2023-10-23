@@ -45,5 +45,14 @@ public class P6OOPLesson {
 				System.out.println(weapon.getName() + " is automatic");
 			}
 		}
+
+		// builder pattern, pagal GOF knyga
+		Person person = Person
+				.builder()
+				.name("")
+				.age(20)
+				.surname("Tomaitis");
+
+		System.out.println(person);
 	}
 }
