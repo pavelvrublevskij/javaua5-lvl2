@@ -2,6 +2,7 @@ package lt.codeacademy.git.branch.test;
 
 import java.math.BigDecimal;
 
+import lt.codeacademy.git.branch.test.interfaces.HasCaliber;
 import lt.codeacademy.git.branch.test.interfaces.IsAutomatic;
 import lt.codeacademy.git.branch.test.weapon.Weapon;
 import lt.codeacademy.git.branch.test.weapon.gun.Gun;
@@ -34,7 +35,13 @@ public class P6OOPLesson {
 //		}
 
 		weaponManager.getWeapons()
-				.forEach(weapon -> System.out.println(weapon.getName() + " " + weapon.getPrice()));
+				.forEach(weapon -> {
+					if (weapon instanceof HasCaliber caliberWeapon) {
+						System.out.println(weapon.getName() + " " + weapon.getPrice() + " " + caliberWeapon.getCaliber());
+					} else {
+						System.out.println(weapon.getName() + " " + weapon.getPrice());
+					}
+				});
 
 		for (Weapon weapon : weaponManager.getWeapons()) {
 			if (weapon instanceof IsAutomatic) {
