@@ -35,13 +35,10 @@ public class P6OOPLesson {
 //		}
 
 		weaponManager.getWeapons()
-				.forEach(weapon -> {
-					if (weapon instanceof HasCaliber caliberWeapon) {
-						System.out.println(weapon.getName() + " " + weapon.getPrice() + " " + caliberWeapon.getCaliber());
-					} else {
-						System.out.println(weapon.getName() + " " + weapon.getPrice());
-					}
-				});
+				.stream()
+				.filter(weapon -> weapon instanceof HasCaliber)
+				.filter(weapon -> weapon.getPrice().compareTo(BigDecimal.valueOf(1000)) > 0)
+				.forEach(weapon -> System.out.println(weapon.getName() + " " + weapon.getPrice() + " " + ((HasCaliber) weapon).getCaliber()));
 
 		for (Weapon weapon : weaponManager.getWeapons()) {
 			if (weapon instanceof IsAutomatic) {
