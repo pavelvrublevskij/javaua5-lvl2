@@ -2,6 +2,9 @@ package lt.codeacademy.javaua5.lvl2.json.config;
 
 import java.util.StringJoiner;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public final class Config {
 
 	private String country;
@@ -13,7 +16,7 @@ public final class Config {
 	}
 
 	public String getCountry() {
-		return country;
+		return country == null ? "N/A" : country;
 	}
 
 	public String getCurrency() {

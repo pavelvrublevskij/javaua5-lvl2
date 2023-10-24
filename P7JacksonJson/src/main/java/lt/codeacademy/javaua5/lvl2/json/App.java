@@ -37,5 +37,13 @@ public class App {
 		ObjectMapper objectMapper = new ObjectMapper();
 		final Config configResult = objectMapper.readValue(configFile, Config.class);
 		System.out.println(configResult);
+		if (configResult.getCountry() == null) {
+			System.out.println("Country is null");
+		} else {
+			System.out.println("Country is not null");
+		}
+		String country = configResult.getCountry();
+		System.out.println(country.length());
+
 	}
 }
