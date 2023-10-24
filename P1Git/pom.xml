@@ -8,15 +8,6 @@
 		<version>1.0-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>P6BasicKartojimas</artifactId>
-	<name>P6BasicKartojimas</name>
-
-	<dependencies>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>3.8.1</version>
-			<scope>test</scope>
-		</dependency>
-	</dependencies>
+	<artifactId>P1Git</artifactId>
+	<name>P1Git</name>
 </project>
