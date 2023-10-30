@@ -13,7 +13,7 @@ public class ClassGenericExample  {
 		System.out.println(value);
 
 		box.setObject("Labas");
-		String value2 = box.getObject();  // cia gauname runtime exception
+		String value2 = box.getObject();
 		System.out.println(value2);
 	}
 }
