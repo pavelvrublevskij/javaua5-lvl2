@@ -1,23 +1,19 @@
 package lt.codeacademy.javaua5.lvl2.generics;
 
-public class ClassGenericExample {
-
-	private Box box = new Box();
+public class ClassGenericExample  {
 
 	public void init() {
+		final Box<String> box = new Box<>();
 		box.setObject("Tekstas");
-		System.out.println(getBox().getObject());
+		System.out.println(box.getObject());
 
-		box.setObject(10);
-		int value = (int) box.getObject();
+		final Box<Integer> boxInt = new Box<>();
+		boxInt.setObject(10);
+		int value = boxInt.getObject();
 		System.out.println(value);
 
 		box.setObject("Labas");
-		int value2 = (int) box.getObject();  // cia gauname runtime exception
+		String value2 = box.getObject();  // cia gauname runtime exception
 		System.out.println(value2);
-	}
-
-	private Box getBox() {
-		return box;
 	}
 }
