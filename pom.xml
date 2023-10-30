@@ -15,6 +15,7 @@
 		<module>P6OOP</module>
 		<module>P6BasicKartojimas</module>
 		<module>P7JacksonJson</module>
+		<module>P11-Generics</module>
 	</modules>
 
 	<properties>
