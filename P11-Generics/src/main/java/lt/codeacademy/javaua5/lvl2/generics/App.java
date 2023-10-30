@@ -6,6 +6,7 @@ package lt.codeacademy.javaua5.lvl2.generics;
 public class App {
 
 	public static void main(String[] args) {
-		new ClassGenericExample().init();
+//		new ClassGenericExample().init();
+		new Task1Example().init();
 	}
 }
