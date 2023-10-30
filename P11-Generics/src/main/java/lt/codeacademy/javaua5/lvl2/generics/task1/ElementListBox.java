@@ -5,7 +5,7 @@ import java.util.List;
 
 import lt.codeacademy.javaua5.lvl2.generics.task1.model.Person;
 
-public abstract class CommonListBox<E> implements ListBox<E> {
+public class ElementListBox<E> implements ListBox<E> {
 
 	private List<E> list;
 
@@ -22,5 +22,10 @@ public abstract class CommonListBox<E> implements ListBox<E> {
 	@Override
 	public List<E> getElements() {
 		return list;
+	}
+
+	@Override
+	public E getIndex(int index) {
+		return list.get(index);
 	}
 }

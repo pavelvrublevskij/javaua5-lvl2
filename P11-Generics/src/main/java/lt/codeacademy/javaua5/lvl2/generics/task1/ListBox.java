@@ -28,4 +28,6 @@ public interface ListBox<E> {
      * @return a Collection
      */
     List<E> getElements();
+
+	E getIndex(int index);
 }
