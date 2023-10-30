@@ -19,10 +19,10 @@ public class App {
 		result.forEach(r -> System.out.println(r));
 
 		List<Float> result2 = getEverySecondValueList(List.of(1f, 2f, 3f, 4f, 5f, 6f, 7f, 8f));
-		result.forEach(r -> System.out.println(r));
+		result2.forEach(r -> System.out.println(r));
 
 		List<String> result3 = getEverySecondValueList(List.of("a", "b", "c", "d"));
-		result.forEach(r -> System.out.println(r));
+		result3.forEach(r -> System.out.println(r));
 	}
 
 	private static <T> List<T> getEverySecondValueList(List<T> values) {
