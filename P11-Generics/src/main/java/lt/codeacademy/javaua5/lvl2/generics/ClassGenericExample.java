@@ -2,15 +2,17 @@ package lt.codeacademy.javaua5.lvl2.generics;
 
 public class ClassGenericExample {
 
-	private Box boxOfString = new Box();
+	private Box box = new Box();
 
 	public void init() {
-		boxOfString.setText("Tekstas");
+		box.setObject("Tekstas");
+		System.out.println(getBox().getObject());
 
-		System.out.println(getBox().getText());
+		box.setObject(10);
+		System.out.println(getBox().getObject());
 	}
 
 	private Box getBox() {
-		return boxOfString;
+		return box;
 	}
 }

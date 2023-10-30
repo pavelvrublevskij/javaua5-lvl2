@@ -2,13 +2,13 @@ package lt.codeacademy.javaua5.lvl2.generics;
 
 public class Box {
 
-	private String text;
+	private Object object;
 
-	public String getText() {
-		return text;
+	public Object getObject() {
+		return object;
 	}
 
-	public void setText(String text) {
-		this.text = text;
+	public void setObject(Object object) {
+		this.object = object;
 	}
 }
