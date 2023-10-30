@@ -14,8 +14,8 @@ public class Task1Example {
 
 	private void saveAndGetStrings() {
 		final String[] texts = new String[2];
-		texts[0] = new String("Tekstas 1");
-		texts[1] = new String("Tekstas 2");
+		texts[0] = "Tekstas 1";
+		texts[1] = "Tekstas 2";
 
 		final ListBox<String> stringListBox = new StringListBox();
 		stringListBox.addElements(texts);
