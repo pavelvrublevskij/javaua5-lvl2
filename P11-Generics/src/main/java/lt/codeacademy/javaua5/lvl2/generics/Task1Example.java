@@ -2,8 +2,6 @@ package lt.codeacademy.javaua5.lvl2.generics;
 
 import lt.codeacademy.javaua5.lvl2.generics.task1.ElementListBox;
 import lt.codeacademy.javaua5.lvl2.generics.task1.ListBox;
-import lt.codeacademy.javaua5.lvl2.generics.task1.PersonListBox;
-import lt.codeacademy.javaua5.lvl2.generics.task1.StringListBox;
 import lt.codeacademy.javaua5.lvl2.generics.task1.model.Person;
 
 public class Task1Example {
