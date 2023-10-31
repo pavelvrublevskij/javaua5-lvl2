@@ -16,6 +16,7 @@
 		<module>P6BasicKartojimas</module>
 		<module>P7JacksonJson</module>
 		<module>P11-Generics</module>
+		<module>P12PasswordGenerator</module>
 	</modules>
 
 	<properties>
