@@ -3,7 +3,7 @@ package lt.codeacademy.javaua5.lvl2.generics;
 import java.util.LinkedList;
 import java.util.List;
 
-import lt.codeacademy.javaua5.lvl2.generics.task1.model.Person;
+import lt.codeacademy.javaua5.lvl2.generics.inheritance.GenericInheritanceExample;
 
 /**
  * Hello world!
