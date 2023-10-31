@@ -1,4 +1,4 @@
-package lt.codeacademy.javaua5.lvl2.generics;
+package lt.codeacademy.javaua5.lvl2.generics.task1;
 
 import lt.codeacademy.javaua5.lvl2.generics.task1.ElementListBox;
 import lt.codeacademy.javaua5.lvl2.generics.task1.ListBox;
