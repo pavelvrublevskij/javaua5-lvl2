@@ -12,7 +12,7 @@ public class GenericInheritanceExample {
 		add(value2);
 	}
 
-	private void add(Number number) {
+	private <T extends Number> void add(T number) {
 		System.out.println(number.doubleValue() + 5);
 	}
 
