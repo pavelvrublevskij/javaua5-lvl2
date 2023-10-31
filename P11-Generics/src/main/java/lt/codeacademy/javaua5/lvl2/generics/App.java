@@ -13,8 +13,9 @@ public class App {
 	public static void main(String[] args) {
 //		new ClassGenericExample().init();
 //		new Task1Example().init();
+		new GenericInheritanceExample().init();
 
-
+/*
 		List<Integer> result = getEverySecondValueList(List.of(1, 2, 3, 4, 5, 6, 7, 8));
 		result.forEach(r -> System.out.println(r));
 
@@ -22,7 +23,7 @@ public class App {
 		result2.forEach(r -> System.out.println(r));
 
 		List<String> result3 = getEverySecondValueList(List.of("a", "b", "c", "d"));
-		result3.forEach(r -> System.out.println(r));
+		result3.forEach(r -> System.out.println(r));*/
 	}
 
 	private static <T> List<T> getEverySecondValueList(List<T> values) {
