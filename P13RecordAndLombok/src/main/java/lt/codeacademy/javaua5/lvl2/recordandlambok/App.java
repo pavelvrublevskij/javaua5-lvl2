@@ -9,13 +9,20 @@ import lt.codeacademy.javaua5.lvl2.recordandlambok.entity.AnimalRecord;
 public class App {
 
 	public static void main(String[] args) {
-		var animalRerord = new AnimalRecord(2, "Liutas", "0001");
-		System.out.println(animalRerord);
-
-		System.out.println(animalRerord.name());
+//		var animalRerord = new AnimalRecord(2, "Liutas", "0001");
+//		System.out.println(animalRerord);
+//
+//		System.out.println(animalRerord.name());
 
 		System.out.println("---------------- lombok --------------");
-		var animal = new Animal(2, "Liutas", "0001");
+		Animal animal = Animal.builder()
+				.age(2)
+				.name("Liutas")
+				.number("0002")
+				.build();
+
+		System.out.println(animal);
+		animal.setName("Kate");
 		System.out.println(animal);
 	}
 }
