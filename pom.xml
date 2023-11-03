@@ -17,6 +17,7 @@
 		<module>P7JacksonJson</module>
 		<module>P11-Generics</module>
 		<module>P12PasswordGenerator</module>
+		<module>P13RecordAndLombok</module>
 	</modules>
 
 	<properties>
