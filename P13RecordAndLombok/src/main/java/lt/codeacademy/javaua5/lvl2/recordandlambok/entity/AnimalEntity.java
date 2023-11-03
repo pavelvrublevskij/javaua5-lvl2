@@ -1,6 +1,6 @@
 package lt.codeacademy.javaua5.lvl2.recordandlambok.entity;
 
-// immutable class
+// immutable data class
 // what we can do with this class:
 // * do sort
 // * create object
