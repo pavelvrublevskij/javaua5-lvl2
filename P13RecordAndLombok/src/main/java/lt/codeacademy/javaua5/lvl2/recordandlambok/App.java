@@ -1,5 +1,6 @@
 package lt.codeacademy.javaua5.lvl2.recordandlambok;
 
+import lt.codeacademy.javaua5.lvl2.recordandlambok.entity.Animal;
 import lt.codeacademy.javaua5.lvl2.recordandlambok.entity.AnimalRecord;
 
 /**
@@ -12,5 +13,9 @@ public class App {
 		System.out.println(animalRerord);
 
 		System.out.println(animalRerord.name());
+
+		System.out.println("---------------- lombok --------------");
+		var animal = new Animal(2, "Liutas", "0001");
+		System.out.println(animal);
 	}
 }

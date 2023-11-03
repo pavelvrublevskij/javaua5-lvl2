@@ -12,4 +12,13 @@
 	<packaging>jar</packaging>
 
 	<name>p13-record-and-lombok</name>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.30</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
 </project>
