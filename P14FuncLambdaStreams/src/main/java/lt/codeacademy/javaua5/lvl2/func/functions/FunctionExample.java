@@ -13,7 +13,7 @@ public class FunctionExample {
 		}.calcTotal(2, 5));
 */
 
-		final IntTotal myFirstLambdaFunction = (a, b) -> a + b;
+		final IntTotal myFirstLambdaFunction = Integer::sum;
 		System.out.println(myFirstLambdaFunction.calcTotal(2, 5));
 	}
 }
