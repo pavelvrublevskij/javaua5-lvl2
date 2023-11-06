@@ -3,6 +3,7 @@ package lt.codeacademy.javaua5.lvl2.func.functions;
 import java.util.function.IntBinaryOperator;
 
 import lt.codeacademy.javaua5.lvl2.func.functions.consumer.ConsumerExample;
+import lt.codeacademy.javaua5.lvl2.func.functions.predicate.PredicateExample;
 import lt.codeacademy.javaua5.lvl2.func.service.AddressRetrieverService;
 
 public class FunctionExample {
@@ -26,5 +27,6 @@ public class FunctionExample {
 		System.out.println(myBiFunc.applyAsInt(2, 5));*/
 
 		new ConsumerExample(new AddressRetrieverService()).demo();
+		new PredicateExample().demo();
 	}
 }
