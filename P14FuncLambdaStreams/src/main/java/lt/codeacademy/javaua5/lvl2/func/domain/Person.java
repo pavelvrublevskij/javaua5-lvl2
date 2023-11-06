@@ -15,4 +15,12 @@ public class Person {
 	private String lastName;
 	private String phone;
 	private String address;
+
+	public static String getPhoneNumber(Person person) {
+		if (person.getPhone() == null) {
+			return "N/A";
+		}
+
+		return person.getPhone();
+	}
 }

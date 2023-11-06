@@ -1,5 +1,6 @@
 package lt.codeacademy.javaua5.lvl2.func.functions.predicate;
 
+import java.util.function.Function;
 import java.util.function.Predicate;
 
 import lt.codeacademy.javaua5.lvl2.func.domain.Person;
@@ -28,6 +29,9 @@ public class PredicateExample {
 		return p -> {
 			final AddressRetrieverService addressRetrieverService = new AddressRetrieverService();
 			final String personAddress = addressRetrieverService.getAddressFromRCByPerson(p);
+
+			Function<Person, String> personFunc = Person::getPhoneNumber;
+			p.setPhone(personFunc.apply(p));
 
 			return personAddress != null;
 		};
