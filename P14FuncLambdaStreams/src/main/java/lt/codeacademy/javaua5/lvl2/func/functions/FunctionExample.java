@@ -14,6 +14,7 @@ public class FunctionExample {
 */
 
 		final IntTotal myFirstLambdaFunction = Integer::sum;
-		System.out.println(myFirstLambdaFunction.calcTotal(2, 5));
+		final IntTotal myFirstLambdaFunction2 = (a, b) -> a + b * 2;
+		System.out.println(myFirstLambdaFunction2.calcTotal(2, 5));
 	}
 }
