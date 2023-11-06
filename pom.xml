@@ -18,6 +18,7 @@
 		<module>P11-Generics</module>
 		<module>P12PasswordGenerator</module>
 		<module>P13RecordAndLombok</module>
+		<module>P14FuncLambdaStreams</module>
 	</modules>
 
 	<properties>
