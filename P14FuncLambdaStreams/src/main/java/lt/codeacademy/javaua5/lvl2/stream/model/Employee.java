@@ -1,11 +1,8 @@
 package lt.codeacademy.javaua5.lvl2.stream.model;
 
 import java.math.BigDecimal;
+import java.util.Comparator;
 
-public record Employee(String name, String surname, BigDecimal salary, int workExperience, String role) implements Comparable<Employee> {
+public record Employee(String name, String surname, BigDecimal salary, int workExperience, String role) {
 
-	@Override
-	public int compareTo(Employee o) {
-		return this.surname.compareTo(o.surname);  // ascending sort
-	}
 }

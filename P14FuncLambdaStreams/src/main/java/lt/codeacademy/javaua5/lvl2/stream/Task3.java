@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 import java.util.Comparator;
 import java.util.List;
 
+import lt.codeacademy.javaua5.lvl2.EmployeeSurnameComparator;
 import lt.codeacademy.javaua5.lvl2.stream.model.Employee;
 
 import static java.lang.System.*;
@@ -82,7 +83,7 @@ public class Task3 {
 		out.println("=====================================");
 
 		EMPLOYEES.stream()
-				.sorted()
+				.sorted(new EmployeeSurnameComparator())
 				.forEach(out::println);
 	}
 
