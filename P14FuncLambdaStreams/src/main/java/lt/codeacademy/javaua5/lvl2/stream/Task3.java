@@ -81,13 +81,6 @@ public class Task3 {
 	}
 
 	private static Comparator<Employee> getEmployeeComparator() {
-		return (emp1, emp2) -> {
-			int surnameCompare = emp1.surname().compareTo(emp2.surname());
-			if (surnameCompare != 0) {
-				return surnameCompare;
-			}
-
-			return emp1.name().compareTo(emp2.name());
-		};
+		return Comparator.comparing(Employee::surname).thenComparing(Employee::name);
 	}
 }
