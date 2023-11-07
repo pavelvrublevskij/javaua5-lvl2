@@ -1,6 +1,7 @@
 package lt.codeacademy.javaua5.lvl2.stream;
 
 import java.math.BigDecimal;
+import java.util.Comparator;
 import java.util.List;
 
 import lt.codeacademy.javaua5.lvl2.stream.model.Employee;
@@ -18,14 +19,14 @@ public class Task3 {
 			new Employee("Kazys", "Kazaitis", BigDecimal.valueOf(6000), 6, "FE Developer"),
 			new Employee("Kestas", "Kestaitis", BigDecimal.valueOf(7000), 7, "Developer"),
 			new Employee("Jonas", "Jonaitis", BigDecimal.valueOf(8000), 8, "Java Developer"),
-			new Employee("Petras", "Petraitis", BigDecimal.valueOf(9000), 9, "Developer"),
+			new Employee("Antanas", "Petraitis", BigDecimal.valueOf(9000), 9, "Developer"),
 			new Employee("Antanas", "Antanaitis", BigDecimal.valueOf(10000), 10, "Java Developer"),
 			new Employee("Ona", "Onaite", BigDecimal.valueOf(11000), 11, "Developer"),
 			new Employee("Maryte", "Maryte", BigDecimal.valueOf(12000), 12, "FE Developer"),
 			new Employee("Kazys", "Kazaitis", BigDecimal.valueOf(13000), 13, "Manager"),
 			new Employee("Kestas", "Kestaitis", BigDecimal.valueOf(14000), 14, "Java Developer"),
 			new Employee("Jonas", "Jonaitis", BigDecimal.valueOf(15000), 15, "Developer"),
-			new Employee("Petras", "Petraitis", BigDecimal.valueOf(16000), 16, "Developer"),
+			new Employee("Zigma", "Petraitis", BigDecimal.valueOf(16000), 16, "Developer"),
 			new Employee("Antanas", "Antanaitis", BigDecimal.valueOf(17000), 17, "Java Developer"),
 			new Employee("Ona", "Onaite", BigDecimal.valueOf(18000), 18, "Developer"),
 			new Employee("Maryte", "Maryte", BigDecimal.valueOf(19000), 19, "FE Developer"),
@@ -71,5 +72,22 @@ public class Task3 {
 				.orElse(0d);
 
 		out.println("FE Developers total salary sum: " + feDeveloperTotalSalarySum);
+
+		out.println("=====================================");
+
+		EMPLOYEES.stream()
+				.sorted(getEmployeeComparator())
+				.forEach(out::println);
+	}
+
+	private static Comparator<Employee> getEmployeeComparator() {
+		return (emp1, emp2) -> {
+			int surnameCompare = emp1.surname().compareTo(emp2.surname());
+			if (surnameCompare != 0) {
+				return surnameCompare;
+			}
+
+			return emp1.name().compareTo(emp2.name());
+		};
 	}
 }
