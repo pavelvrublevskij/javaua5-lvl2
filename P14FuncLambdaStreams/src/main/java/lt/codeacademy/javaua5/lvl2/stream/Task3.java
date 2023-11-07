@@ -52,7 +52,7 @@ public class Task3 {
 				.filter(employee -> employee.role().equals("Java Developer"))
 				.forEach(out::println);*/
 
-		out.println("=====================================");
+/*		out.println("=====================================");
 
 		double feDeveloperTotalSalarySum = 0;
 
@@ -77,6 +77,12 @@ public class Task3 {
 
 		EMPLOYEES.stream()
 				.sorted(getEmployeeComparator())
+				.forEach(out::println);*/
+
+		out.println("=====================================");
+
+		EMPLOYEES.stream()
+				.sorted()
 				.forEach(out::println);
 	}
 
