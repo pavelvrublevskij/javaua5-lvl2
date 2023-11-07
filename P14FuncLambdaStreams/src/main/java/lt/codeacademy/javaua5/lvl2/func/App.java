@@ -1,6 +1,8 @@
 package lt.codeacademy.javaua5.lvl2.func;
 
 import lt.codeacademy.javaua5.lvl2.func.functions.FunctionExample;
+import lt.codeacademy.javaua5.lvl2.func.lambdatask.Startup;
+import lt.codeacademy.javaua5.lvl2.func.lambdatask.TaskSolution;
 
 /**
  * Hello world!
@@ -8,6 +10,7 @@ import lt.codeacademy.javaua5.lvl2.func.functions.FunctionExample;
 public class App {
 
 	public static void main(String[] args) {
-		new FunctionExample();
+//		new FunctionExample();
+		new TaskSolution();
 	}
 }
