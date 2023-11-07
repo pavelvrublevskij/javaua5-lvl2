@@ -35,7 +35,7 @@ public class Task3 {
 	);
 
 	public Task3() {
-		EMPLOYEES.stream()
+/*		EMPLOYEES.stream()
 				.filter(employee -> employee.workExperience() > 3)
 				.forEach(out::println);
 
@@ -49,6 +49,25 @@ public class Task3 {
 
 		EMPLOYEES.stream()
 				.filter(employee -> employee.role().equals("Java Developer"))
-				.forEach(out::println);
+				.forEach(out::println);*/
+
+		out.println("=====================================");
+
+		double feDeveloperTotalSalarySum = 0;
+
+		feDeveloperTotalSalarySum = EMPLOYEES.stream()
+				.filter(employee -> employee.role().contains("FE"))
+				.mapToDouble(employee -> employee.salary().doubleValue())
+				.sum();
+
+		out.println("FE Developers total salary sum: " + feDeveloperTotalSalarySum);
+
+		out.println("=====================================");
+
+		feDeveloperTotalSalarySum = EMPLOYEES.stream()
+				.filter(employee -> employee.role().contains("FE"))
+				.reduce(0d, (total, employee) -> total + employee.salary().doubleValue(), Double::sum);
+
+		out.println("FE Developers total salary sum: " + feDeveloperTotalSalarySum);
 	}
 }
