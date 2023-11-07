@@ -67,7 +67,8 @@ public class Task3 {
 		feDeveloperTotalSalarySum = EMPLOYEES.stream()
 				.filter(employee -> employee.role().contains("FE"))
 				.map(employee -> employee.salary().doubleValue())
-				.reduce(0d, (total, value) -> total + value, Double::sum);
+				.reduce(Double::sum)
+				.orElse(0d);
 
 		out.println("FE Developers total salary sum: " + feDeveloperTotalSalarySum);
 	}
