@@ -14,7 +14,8 @@ public class StreamApp {
 				.filter(text -> text.contains("s"))
 				.forEach(x -> System.out.println(x));*/
 
-		new Task2();
+//		new Task2();
+		new Task3();
 	}
 
 }
