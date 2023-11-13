@@ -19,6 +19,7 @@
 		<module>P12PasswordGenerator</module>
 		<module>P13RecordAndLombok</module>
 		<module>P14FuncLambdaStreams</module>
+		<module>P20Swing</module>
 	</modules>
 
 	<properties>
