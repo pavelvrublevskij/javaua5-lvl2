@@ -2,6 +2,8 @@ package lt.codeacademy.javaua5.lvl2.gui;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 /**
  * Hello world!
@@ -9,23 +11,43 @@ import java.awt.*;
 public class App {
 
 	public static void main(String[] args) {
-		JFrame frame = new JFrame("My Forst GUI!");
-		frame.setSize(400, 400);
+		JFrame frame = new JFrame("My First GUI");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setSize(300, 600);
 
-		JPanel centerPanel = new JPanel();
-		centerPanel.setBackground(Color.GRAY);
-		frame.add(BorderLayout.CENTER, centerPanel);
+		DefaultListModel<String> model = new DefaultListModel<>();
+		JList<String> sarasas = new JList<>(model);
 
-		JPanel bottomPanel = new JPanel();
-		bottomPanel.setBackground(Color.BLUE);
-		frame.add(BorderLayout.SOUTH, bottomPanel);
+		JLabel labelVardas = new JLabel("Vardas");
+		JTextField vardasTextField = new JTextField(20);
+		JLabel labelPavarde = new JLabel("Pavarde");
+		JTextField pavardeTextField = new JTextField(20);
+		JButton itrauktiMygtukas = new JButton("Itraukti i sarasa");
+		JButton isvalymoMygtukas = new JButton("Isvalyti sarasa");
 
-		JButton button = new JButton("Click me 1!");
-		centerPanel.add(button);
+		itrauktiMygtukas.addActionListener(e -> {
+			String ivestasVardas = vardasTextField.getText();
+			String ivestaPavarde = pavardeTextField.getText();
+			model.addElement(ivestasVardas + " " + ivestaPavarde);
+			vardasTextField.setText(null);
+			pavardeTextField.setText(null);
+		});
 
-		JButton button2 = new JButton("Click me 2!");
-		bottomPanel.add(button2);
+		isvalymoMygtukas.addActionListener(e -> model.clear());
+
+		JPanel panelVirsus = new JPanel();
+		panelVirsus.setPreferredSize(new Dimension(300, 100));
+		JPanel panelCentras = new JPanel();
+		panelVirsus.add(labelVardas);
+		panelVirsus.add(vardasTextField);
+		panelVirsus.add(labelPavarde);
+		panelVirsus.add(pavardeTextField);
+		panelVirsus.add(itrauktiMygtukas);
+		panelVirsus.add(isvalymoMygtukas);
+		panelCentras.add(sarasas);
+
+		frame.getContentPane().add(BorderLayout.NORTH, panelVirsus);
+		frame.getContentPane().add(BorderLayout.CENTER, panelCentras);
 
 		frame.setVisible(true);
 	}
