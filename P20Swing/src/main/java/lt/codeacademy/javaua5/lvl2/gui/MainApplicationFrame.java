@@ -2,6 +2,10 @@ package lt.codeacademy.javaua5.lvl2.gui;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import lt.codeacademy.javaua5.lvl2.gui.action.ItrauktiMygtukasOnClick;
 
 public class MainApplicationFrame extends JFrame {
 
@@ -18,15 +22,21 @@ public class MainApplicationFrame extends JFrame {
 	}
 
 	private void addActionListeners() {
-		itrauktiMygtukas.addActionListener(e -> {
-			String ivestasVardas = vardasTextField.getText();
-			String ivestaPavarde = pavardeTextField.getText();
-			model.addElement(ivestasVardas + " " + ivestaPavarde);
-			vardasTextField.setText(null);
-			pavardeTextField.setText(null);
+		itrauktiMygtukas.addActionListener(new ItrauktiMygtukasOnClick());
+
+/*		itrauktiMygtukas.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				String ivestasVardas = vardasTextField.getText();
+				String ivestaPavarde = pavardeTextField.getText();
+				model.addElement(ivestasVardas + " " + ivestaPavarde);
+				vardasTextField.setText(null);
+				pavardeTextField.setText(null);
+			}
 		});
 
-		isvalymoMygtukas.addActionListener(e -> model.clear());
+		isvalymoMygtukas.addActionListener(e -> model.clear());*/
 	}
 
 	private void createComponents() {
