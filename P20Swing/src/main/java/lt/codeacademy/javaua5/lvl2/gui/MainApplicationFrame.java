@@ -22,21 +22,8 @@ public class MainApplicationFrame extends JFrame {
 	}
 
 	private void addActionListeners() {
-		itrauktiMygtukas.addActionListener(new ItrauktiMygtukasOnClick());
-
-/*		itrauktiMygtukas.addActionListener(new ActionListener() {
-
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				String ivestasVardas = vardasTextField.getText();
-				String ivestaPavarde = pavardeTextField.getText();
-				model.addElement(ivestasVardas + " " + ivestaPavarde);
-				vardasTextField.setText(null);
-				pavardeTextField.setText(null);
-			}
-		});
-
-		isvalymoMygtukas.addActionListener(e -> model.clear());*/
+		itrauktiMygtukas.addActionListener(new ItrauktiMygtukasOnClick(vardasTextField, pavardeTextField, model));
+		isvalymoMygtukas.addActionListener(e -> model.clear());
 	}
 
 	private void createComponents() {
